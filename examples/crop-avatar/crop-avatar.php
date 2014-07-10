@@ -11,7 +11,7 @@
         function __construct($src, $data, $file) {
             if (!empty($src)) {
                 $this -> setSrc($src);
-                $this -> setDist($this -> getPathInfo($src)['type']);
+                $this -> setDist($this -> getPathInfo($src['type']));
             }
 
             if (!empty($data)) {
